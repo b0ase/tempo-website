@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ESNext"
+    ],
+    "module": "CommonJS",
+    "target": "ES2020",
+    "moduleResolution": "node",
+    "rootDir": "./",
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "strict": true,
+    "isolatedModules": true,
+    "strictNullChecks": true,
+    "downlevelIteration": false,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "typeRoots": ["./node_modules/@types", "src/types"]
+  },
+  "include": [
+    "src",
+    "src/types.d.ts",
+    "jest.config.js",
+    "tsconfig.json"
+  ],
+  "exclude": [
+    "dist",
+    "*/**/__tests"
+  ]
+}

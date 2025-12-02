@@ -1,0 +1,73 @@
+@import '../../styles/styleVariables.scss';
+
+.topMenuContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  background-color: $grayBackground;
+
+  .navigationIcon {
+    cursor: pointer;
+
+    &:hover {
+      fill: $accentColor;
+    }
+    &:active {
+      fill: $accentColor;
+      filter: brightness(0.55);
+    }
+  }
+}
+
+.menuProfileContainer {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-right: 1rem; // Adjust right margin as needed
+
+  &:hover {
+    color: $accentColor;
+  }
+
+  p {
+    margin-right: 0.5rem; // Adjust space between the username and the icon
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topMenuContainer {
+    height: 2.5rem;
+    padding: 0 0.5rem;
+
+    .navigationIcon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .menuProfileContainer {
+    margin-right: 0.5rem;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: inline-flex;
+    margin-right: 1rem;
+  }
+}
+
+.drawerContent {
+  width: 250px;
+  padding: 1rem;
+  background-color: #111;
+  height: 100%;
+  color: white;
+}

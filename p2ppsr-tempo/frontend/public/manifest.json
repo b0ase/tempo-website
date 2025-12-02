@@ -1,0 +1,44 @@
+{
+  "short_name": "Tempo",
+  "name": "Tempo — Feel the Beat",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+   "babbage": {
+    "groupPermissions": {
+      "protocolPermissions": [
+        {
+          "protocolID": [2, "Tempo"],
+          "counterparty": "self",
+          "description": "for fetching user songs"
+        },
+         {
+          "protocolID": [2, "tmtsp"],
+          "counterparty": "anyone",
+          "description": "for uploading and deleting songs"
+        },
+         {
+          "protocolID": [2, "tempo"],
+          "counterparty": "self",
+          "description": "for publishing keys"
+        },
+         {
+          "protocolID": [1, "identity key retrieval"],
+          "counterparty": "self",
+          "description": "for fetching user identities"
+        },
+         {
+          "protocolID": [2, "server hmac"],
+          "counterparty": "self",
+          "description": "for deriving keys related to hmac"
+        }
+      ] 
+    }
+  }
+}
