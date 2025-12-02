@@ -9,7 +9,7 @@ import CallToAction from "@/components/CallToAction";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-16">
       <Hero />
       <Features />
       <HowItWorks />
